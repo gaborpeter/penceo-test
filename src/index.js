@@ -3,4 +3,5 @@
 const index = (() => {
   start.start();
   forgetPassword.getNewPassword();
+  login.login();
 })();
