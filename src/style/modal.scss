@@ -15,18 +15,26 @@
   margin: 30px 15px;
   width: 80vw;
   background-color: #fff;
-  padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .modal-header {
-
+  padding: 15px;
 }
 
 .modal-body {
   display: flex;
   flex-direction: column;
+  padding: 25px;
+}
+
+.modal-footer {
+  background: no-repeat url("./assets/footer.png");
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
 }
 
 .modal-cell {
