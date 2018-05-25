@@ -1,5 +1,6 @@
 'use strict';
 
 const index = (() => {
-  startButton.getStartButton();
+  start.start();
+  forgetPassword.getNewPassword();
 })();

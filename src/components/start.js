@@ -1,8 +1,8 @@
 'use strict';
 
-const startButton = (() => {
+const start = (() => {
 
-  const getStartButton = () => {
+  const start = () => {
     const startButton = document.querySelector('.start');
     const modalWindow = document.querySelector('.modal-window')
 
@@ -13,6 +13,6 @@ const startButton = (() => {
   }
 
   return {
-    getStartButton: getStartButton
+    start: start
   }
 })();
