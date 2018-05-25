@@ -3,16 +3,28 @@
   box-sizing: border-box;
 }
 
-input, button {
-  height: 60px;
-  width: 95%;
-  margin-top: 10px;
-}
-
 h1 {
   font-size: 2em;
 }
 
 p {
   font-weight: lighter;
+}
+
+input, button {
+  height: 60px;
+  width: 95%;
+  margin-top: 10px;
+  transition: top .5s, left .5s, box-shadow .5s;
+  box-shadow: 0 0 0 grey;
+}
+
+input:hover, button:hover {
+  box-shadow: 5px 5px 0 grey;
+}
+
+input:focus, button:focus{
+  border: 2px solid grey;
+  outline: 0px;
+  box-shadow: 5px 5px 0 grey;
 }
