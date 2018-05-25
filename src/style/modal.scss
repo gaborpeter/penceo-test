@@ -8,7 +8,6 @@
   align-content: center;
   justify-content: center;
   background: rgba(0,0,0,0.8);
-  visibility: hidden;
   z-index: 1000;
 }
 
@@ -36,6 +35,9 @@
   display: flex;
   flex-direction: column;
   align-content: space-around;
+}
+.login-modal {
+  visibility: hidden;
 }
 
 .password-modal {

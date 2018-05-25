@@ -11,7 +11,6 @@ app.get('/', function(req, res) {
 });
 
 app.get('/password', function(req, res) {
-  console.log('sdsd');
   res.sendFile(__dirname +  '/public/password.html')
 });
 
