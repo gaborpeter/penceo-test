@@ -4,14 +4,15 @@ const ajax =(() => {
   const url = 'http://localhost:3000/login';
 
   const ajax = (body => {
-    let xhr = new XMLHttpRequest();
     const loginDatas = JSON.stringify(body);
-    xhr.open('POST', url);
-    xhr.setRequestHeader('content-type', 'application/json');
-    xhr.onload = function() {
-      console.log(JSON.parse(xhr.responseText));
-    };
-    xhr.send(loginDatas);
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader('content-type', 'application/json');
+      xhr.onload = () => resolve(JSON.parse(xhr.responseText));
+      xhr.onerror = () => reject(JSON.parse(xhr.statusText));
+      xhr.send(loginDatas);
+    })
   })
 
   return {
