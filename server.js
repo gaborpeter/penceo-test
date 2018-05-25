@@ -17,8 +17,7 @@ app.get('/password', function(req, res) {
 });
 
 app.post('/login', function(req, res) {
-  console.log(req.body);
-  response.json(formData);
+  req.body.username === 'name' && req.body.password === 'password' ? res.json({status: 'OK'}) : res.json({status: 'Error'});
 });
 
 app.listen(process.env.PORT || 3000, function () {
