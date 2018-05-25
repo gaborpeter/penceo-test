@@ -5,6 +5,8 @@ const express = require ('express');
 const app = express();
 app.use('/src', express.static('src'));
 app.use('/public', express.static('public'));
+app.use(express.json());
+
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname +  '/public/index.html')
@@ -12,6 +14,11 @@ app.get('/', function(req, res) {
 
 app.get('/password', function(req, res) {
   res.sendFile(__dirname +  '/public/password.html')
+});
+
+app.post('/login', function(req, res) {
+  console.log(req.body);
+  response.json(formData);
 });
 
 app.listen(process.env.PORT || 3000, function () {
