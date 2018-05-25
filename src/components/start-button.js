@@ -4,8 +4,10 @@ const startButton = (() => {
 
   const getStartButton = () => {
     const startButton = document.querySelector('.start');
+    const modalWindow = document.querySelector('.modal-window')
+
     startButton.addEventListener('click', event => {
-      console.log('hey');
+      modalWindow.style.visibility = 'visible';
     })
     return startButton;
   }
