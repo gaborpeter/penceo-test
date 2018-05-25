@@ -8,7 +8,6 @@ const forgetPassword = (() => {
     forgottenButton.addEventListener('click', event => {
       document.location.replace('/password');
     })
-    return forgottenButton;
   }
 
   return {

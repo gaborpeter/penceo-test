@@ -9,7 +9,6 @@ const start = (() => {
     startButton.addEventListener('click', event => {
       modalWindow.style.visibility = 'visible';
     })
-    return startButton;
   }
 
   return {
