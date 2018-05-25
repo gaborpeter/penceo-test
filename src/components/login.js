@@ -13,7 +13,11 @@ const login = (() => {
       username: username,
       password: password
     }
-    ajax.ajax(loginDatas);
+    ajax.ajax(loginDatas).then(response => {
+      displayRespond.displayRespond(response);
+    }).catch(error => {
+      displayRespond.displayRespond(error);
+    });
   }
 
   const login = () => {
@@ -21,7 +25,6 @@ const login = (() => {
 
     loginButton.addEventListener('click', getLoginDatas);
 
-    return loginButton;
   }
 
   return {
