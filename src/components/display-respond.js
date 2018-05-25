@@ -7,7 +7,7 @@ const displayRespond = (() => {
     const response = document.createElement('p');
 
     modalFooter.innerHTML = '';
-    modalFooter.setAttribute('style', 'background: white;')
+    modalFooter.setAttribute('style', 'background: white;');
     response.textContent = `The response is: ${result.status}`;
     modalFooter.appendChild(response);
   }

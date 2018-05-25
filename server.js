@@ -9,11 +9,11 @@ app.use(express.json());
 
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname +  '/public/index.html')
+  res.sendFile(__dirname +  '/public/index.html');
 });
 
 app.get('/password', function(req, res) {
-  res.sendFile(__dirname +  '/public/password.html')
+  res.sendFile(__dirname +  '/public/password.html');
 });
 
 app.post('/login', function(req, res) {
