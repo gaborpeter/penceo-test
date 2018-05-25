@@ -3,7 +3,6 @@
 const displayRespond = (() => {
 
   const displayRespond = (result) => {
-    console.log(result);
     const modalFooter = document.querySelector('.modal-footer');
     const response = document.createElement('p');
 
