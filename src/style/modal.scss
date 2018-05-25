@@ -35,7 +35,15 @@
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  margin-top: 35px;
 }
+
+.password-cell {
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+}
+
 .login-modal {
   visibility: hidden;
 }

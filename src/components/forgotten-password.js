@@ -6,7 +6,7 @@ const forgetPassword = (() => {
     const forgottenButton = document.querySelector('#forgotten-password');
 
     forgottenButton.addEventListener('click', event => {
-      history.pushState({}, 'password', '/password')
+      document.location.replace('/password');
     })
     return forgottenButton;
   }
