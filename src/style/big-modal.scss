@@ -3,13 +3,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px;
+    grid-row-gap: 20px;
   }
 
   .modal-footer {
     background: no-repeat url("./assets/footer.png");
     width: 100%;
-    height: 100%;
+    height: 255px;
     opacity: 1;
     position: static;
+  }
+
+  input, button {
+    height: 95px;
   }
 }
